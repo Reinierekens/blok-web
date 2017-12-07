@@ -73,6 +73,11 @@ main {
     overflow-x: scroll;
 }
 
+main>article {
+    margin: 2.5em;
+    height: 20em;
+}
+
 section> article {
     margin: em;
     border-radius: 1em;
