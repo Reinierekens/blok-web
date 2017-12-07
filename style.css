@@ -1,0 +1,135 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 5em;
+    background-color: white;
+}
+
+header ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+article>header {
+    background-image: url('images/gevangen.jpg');
+    background-repeat: no-repeat;
+    background-position: center top;
+    border-radius: 1em 1em 0em 0em;
+    width: 100%;
+}
+
+li {
+    margin: 0.3em;
+    list-style: none;
+}
+
+li a {
+    color: #4ab967;
+    margin-bottom: 1em;
+    text-decoration: none;
+}
+
+header+section {
+    background-image: url('images/vakantiebestemming.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+    padding: 1em;
+}
+
+h1 {
+    padding: 0.em;
+    margin: 1em;
+    text-align: center;
+    font-family: Nexabold;
+    color: white;
+    font-size: 2em;
+}
+
+article {
+    margin: 2em;
+    background-color: #fbf7f4;
+    border-radius: 1em;
+    color: #606060;
+    height: 19em;
+}
+
+article>p {
+    margin: 1em;
+}
+
+main {
+    display: ;
+}
+
+section> article {
+    margin: em;
+    border-radius: 1em;
+    color: #606060;
+    background-color: #eddbca;
+}
+
+article>header>h2 {
+    font-family: Nexabold;
+    src: url('../FED/fonts/Nexa%20Bold.otf')format('truetype') src: url('../FED/fonts/Nexa%20Light.otf') format('truetype');
+    color: #4ab967;
+}
+
+section > article > h2 {
+    color: #362f90;
+}
+
+body {
+    font-family: Nexalight;
+    width: 100%;
+    margin: 0;
+    background-color: #eddbca;
+}
+
+header>img {
+    max-width: 8em;
+    height: auto;
+    width: auto;
+}
+
+article a {
+    text-decoration: none;
+    color: #606060;
+    margin: 1em
+}
+
+article a:hover {
+    color: #ee3968;
+}
+
+footer,
+a,
+h4 {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    color: #362f90;
+}
+
+a:hover {
+    color: #ee3968;
+}
+
+main+section {
+    background-color: white;
+    padding: 1em;
+}
+
+@media (min-width:30em) {
+    body {
+        background-color: green;
+    }
+}
+
+@media (min-width:50em) {
+    body {
+        background-color: gold;
+    }
+}
