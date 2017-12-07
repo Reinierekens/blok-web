@@ -1,3 +1,11 @@
+body {
+    font-family: Nexalight;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #eddbca;
+}
+
 header {
     display: flex;
     align-items: center;
@@ -12,14 +20,6 @@ header ul {
     justify-content: flex-end;
 }
 
-article>header {
-    background-image: url('images/gevangen.jpg');
-    background-repeat: no-repeat;
-    background-position: center top;
-    border-radius: 1em 1em 0em 0em;
-    width: 100%;
-}
-
 li {
     margin: 0.3em;
     list-style: none;
@@ -31,8 +31,16 @@ li a {
     text-decoration: none;
 }
 
+article>header {
+    background-image: url('gevangen.jpg');
+    background-repeat: no-repeat;
+    background-position: center top;
+    border-radius: 1em 1em 0em 0em;
+    width: 100%;
+}
+
 header+section {
-    background-image: url('images/vakantiebestemming.jpg');
+    background-image: url('vakantiebestemming.jpg');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 100%;
@@ -61,7 +69,8 @@ article>p {
 }
 
 main {
-    display: ;
+    display: flex;
+    overflow-x: scroll;
 }
 
 section> article {
@@ -75,17 +84,11 @@ article>header>h2 {
     font-family: Nexabold;
     src: url('../FED/fonts/Nexa%20Bold.otf')format('truetype') src: url('../FED/fonts/Nexa%20Light.otf') format('truetype');
     color: #4ab967;
+    margin: 3.5em;
 }
 
 section > article > h2 {
     color: #362f90;
-}
-
-body {
-    font-family: Nexalight;
-    width: 100%;
-    margin: 0;
-    background-color: #eddbca;
 }
 
 header>img {
