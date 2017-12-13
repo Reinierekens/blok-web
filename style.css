@@ -10,17 +10,18 @@ body>header {
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 5em;
+    height: 4em;
     background-color: white;
 }
 
-section+section>h2 {
+main+nav>h2 {
     color: #362f90;
     font-family: Nexabold;
     margin-top: 0.4em;
-    margin-bottom: -0.2em;
     text-align: center;
 }
+
+main>article>header {}
 
 section>h2 {
     color: #362f90;
@@ -36,55 +37,74 @@ li>a>p {
     font-size: 0;
 }
 
-section>a:nth-child(6) {
-    background-color: #eddbca;
-    border: none;
-}
-
 input {
     display: none;
 }
 
 label {
     cursor: pointer;
+    color: #362f90;
 }
 
-main+section>nav {
+label:hover {
+    color: #ee3968;
+}
+
+main+nav>main {
     display: none;
 }
 
-input:checked + nav {
+input:checked + main {
     display: block;
 }
 
-section>nav {
+nav>main {
     display: none;
     margin: 1.5em;
+    height: 2em;
+    height: 3em;
 }
 
-section>nav>a {}
-
-nav>a {
+main>a {
     background-color: #fbf7f4;
     border-color: #fbf7f4;
     border-radius: 1.2em;
     border-width: 0.1em;
     border-style: solid;
-    padding: .4em;
+    padding: 0.4em;
 }
 
-section>a:active {
-    background-color: #3e8e41;
-    box-shadow: 0 5px #666;
-    transform: translateY(4px);
+main>a:hover {
+    background-color: #362f90;
+    border-color: #362f90;
+    color: white;
+    border-radius: 1.2em;
+    border-width: 0.1em;
+    border-style: solid;
 }
 
-section>a:target {
-    background-color: #3e8e41;
-    box-shadow: 0 5px #666;
+main>a:target {
+    background-color: #fff;
 }
 
-section>a {
+nav>a:active {
+    box-shadow: 0 .1em #666;
+}
+
+nav>a:hover {
+    background-color: #362f90;
+    border-color: #362f90;
+    color: white;
+    border-radius: 1.2em;
+    border-width: 0.1em;
+    border-style: solid;
+}
+
+nav>a:target {
+    background-color: #fff;
+}
+
+nav>a {
     background-color: #fbf7f4;
     border-color: #fbf7f4;
     border-radius: 1.2em;
@@ -145,12 +165,17 @@ article>p {
     margin: 1em;
 }
 
-main {
+section+main {
     display: flex;
     overflow-x: scroll;
 }
 
-main>article {
+section:nth-child(6) {
+    background-color: #eddbca;
+    padding: 1em;
+}
+
+section+main>article {
     height: 17em;
     justify-content: center;
     border-color: #bcbbbb;
@@ -158,6 +183,8 @@ main>article {
     border-width: 0.1em;
     border-style: solid;
     margin-left: 2.5em;
+    background-color: #362f90;
+    color: white
 }
 
 section> article {
@@ -172,8 +199,7 @@ section> article {
 
 article>header>h2 {
     font-family: Nexabold;
-    src: url('../FED/fonts/Nexa%20Bold.otf')format('truetype') src: url('../FED/fonts/Nexa%20Light.otf') format('truetype');
-    color: #4ab967;
+    color: white;
     margin: 1em;
     text-align: center;
     width: 10em;
@@ -189,13 +215,19 @@ header>a>img {
     width: auto;
 }
 
-article a {
+main>article>a {
     text-decoration: none;
-    color: #606060;
+    color: white;
     margin: 1em
 }
 
-article a:hover {
+article>a {
+    text-decoration: none;
+    color: #606060;
+    margin: 1em;
+}
+
+article>a:hover {
     color: #ee3968;
 }
 
@@ -208,11 +240,32 @@ h4 {
     color: #362f90;
 }
 
+nav>footer>h4 {
+    text-decoration: none;
+    text-align: left;
+    color: black;
+    color: #362f90;
+}
+
+main+footer>a {
+    background-color: #362f90;
+    border-color: #362f90;
+    color: white;
+    border-radius: 1.2em;
+    border-width: 0.1em;
+    border-style: solid;
+    padding: .4em;
+}
+
 a:hover {
     color: #ee3968;
 }
 
-main+section {
+article>img {
+    width: 3em;
+}
+
+main+nav {
     background-color: #eddbca;
     padding: 1em;
 }
@@ -223,6 +276,11 @@ main+section {
     }
     li>a>p {
         font-size: 1em;
+    }
+    main+nav {}
+    section:nth-child(6) {
+        display: flex;
+        justify-content: flex-start;
     }
 }
 
