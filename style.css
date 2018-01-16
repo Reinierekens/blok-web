@@ -1,323 +1,336 @@
-body {
-    font-family: Nexalight;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-}
+        body {
+            font-family: Nexalight;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
 
-body>header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 4em;
-    background-color: white;
-    position: fixed;
-    top: 0;
-    left: 0;
-}
+        body>header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 4em;
+            background-color: white;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
 
-main+nav>h2 {
-    color: #362f90;
-    font-family: Nexabold;
-    margin-top: 0.4em;
-    text-align: center;
-}
+        main+nav>h2 {
+            color: #362f90;
+            font-family: Nexabold;
+            margin-top: 0.4em;
+            text-align: center;
+        }
 
-main>article>header {}
+        section>h2 {
+            color: #362f90;
+            font-family: Nexabold;
+            text-align: center;
+        }
 
-section>h2 {
-    color: #362f90;
-    font-family: Nexabold;
-    text-align: center;
-}
+        li>a>img {
+            width: 2.6em;
+        }
 
-li>a>img {
-    width: 2.6em;
-}
+        li>a>p {
+            font-size: 0;
+        }
 
-li>a>p {
-    font-size: 0;
-}
+        input {
+            display: none;
+        }
 
-input {
-    display: none;
-}
+        label {
+            cursor: pointer;
+            color: #362f90;
+        }
 
-label {
-    cursor: pointer;
-    color: #362f90;
-}
+        label:hover {
+            color: #ee3968;
+        }
 
-label:hover {
-    color: #ee3968;
-}
+        main+nav>main {
+            display: none;
+        }
 
-main+nav>main {
-    display: none;
-}
+        input:checked + main {
+            display: block;
+        }
 
-input:checked + main {
-    display: block;
-}
+        header>nav {
+            display: flex;
+        }
 
-header>nav {
-    display: flex;
-}
+        nav>main {
+            display: none;
+            margin: 1.5em;
+        }
 
-nav>main {
-    display: none;
-    margin: 1.5em;
-}
+        main>a {
+            background-color: #fbf7f4;
+            border-color: #fbf7f4;
+            border-radius: 1.2em;
+            border-width: 0.1em;
+            border-style: solid;
+            padding: 0.4em;
+        }
 
-main>a {
-    background-color: #fbf7f4;
-    border-color: #fbf7f4;
-    border-radius: 1.2em;
-    border-width: 0.1em;
-    border-style: solid;
-    padding: 0.4em;
-}
+        main>a:hover {
+            background-color: #362f90;
+            border-color: #362f90;
+            color: white;
+            border-radius: 1.2em;
+            border-width: 0.1em;
+            border-style: solid;
+        }
 
-main>a:hover {
-    background-color: #362f90;
-    border-color: #362f90;
-    color: white;
-    border-radius: 1.2em;
-    border-width: 0.1em;
-    border-style: solid;
-}
+        main>a:target {
+            background-color: #fff;
+        }
 
-main>a:target {
-    background-color: #fff;
-}
+        nav>a:active {
+            box-shadow: 0 .1em #666;
+        }
 
-nav>a:active {
-    box-shadow: 0 .1em #666;
-}
+        nav>a:hover {
+            background-color: #362f90;
+            border-color: #362f90;
+            color: white;
+            border-radius: 1.2em;
+            border-width: 0.1em;
+            border-style: solid;
+        }
 
-nav>a:hover {
-    background-color: #362f90;
-    border-color: #362f90;
-    color: white;
-    border-radius: 1.2em;
-    border-width: 0.1em;
-    border-style: solid;
-}
+        nav>a:target {
+            background-color: #fff;
+        }
 
-nav>a:target {
-    background-color: #fff;
-}
+        nav>a {
+            background-color: #fbf7f4;
+            border-color: #fbf7f4;
+            border-radius: 1.2em;
+            border-width: 0.1em;
+            border-style: solid;
+            padding: .4em;
+        }
 
-nav>a {
-    background-color: #fbf7f4;
-    border-color: #fbf7f4;
-    border-radius: 1.2em;
-    border-width: 0.1em;
-    border-style: solid;
-    padding: .4em;
-}
+        header ul {
+            display: flex;
+            justify-content: flex-end;
+        }
 
-header ul {
-    display: flex;
-    justify-content: flex-end;
-}
+        li {
+            margin: 0.3em;
+            list-style: none;
+        }
 
-li {
-    margin: 0.3em;
-    list-style: none;
-}
+        li a {
+            color: #4ab967;
+            margin-bottom: 1em;
+            text-decoration: none;
+        }
 
-li a {
-    color: #4ab967;
-    margin-bottom: 1em;
-    text-decoration: none;
-}
+        article>header {
+            background-image: url('gevangen.jpg');
+            background-repeat: no-repeat;
+            background-position: center top;
+            border-radius: 1em 1em 0em 0em;
+            width: 100%;
+            height: 4em;
+            display: flex;
+            overflow-x: scroll;
+        }
 
-article>header {
-    background-image: url('gevangen.jpg');
-    background-repeat: no-repeat;
-    background-position: center top;
-    border-radius: 1em 1em 0em 0em;
-    width: 100%;
-    height: 4em;
-    display: flex;
-    overflow-x: scroll;
-}
+        main+a:visited {
+            background-color: aquamarine;
+            color: blueviolet;
+        }
 
-div+section {
-    background-image: url('books.jpg');
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 100%;
-    height: 6em;
-    padding: 6em 1em 0 1em;
-}
+        div+section {
+            background-image: url('books.jpg');
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: 100%;
+            height: 6em;
+            padding: 6em 1em 0 1em;
+        }
 
-h1 {
-    font-family: Nexabold;
-    color: white;
-    font-size: 1.7em;
-    text-align: center
-}
+        h1 {
+            font-family: Nexabold;
+            color: white;
+            font-size: 1.7em;
+            text-align: center
+        }
 
-article {
-    margin: 1em;
-    color: #606060;
-    margin-right: -4em;
-}
-
-article>p {
-    margin: 1em;
-}
-
-section+main {
-    display: flex;
-    overflow-x: scroll;
-    margin-top: -1em;
-}
-
-nav+section {
-    background-color: #eddbca;
-    padding: 1em;
-    display: flex;
-    flex-direction: column;
-    margin-top: -2em;
-}
-
-section+main>article {
-    height: 17em;
-    justify-content: center;
-    border-color: #362f90;
-    border-radius: 1.2em;
-    border-width: 0.1em;
-    border-style: solid;
-    margin-left: 2.5em;
-    background-color: #362f90;
-    color: white
-}
-
-section> article {
-    margin: 1.8em;
-    border-radius: 1em;
-    color: #606060;
-    background-color: #fbf7f4;
-    width: 19em;
-    justify-content: center;
-    height: 17em
-}
-
-article>header>h2 {
-    font-family: Nexabold;
-    color: white;
-    margin: 1em;
-    text-align: center;
-    width: 10em;
-}
-
-section > article > h2 {
-    color: #362f90;
-}
-
-header>a>img {
-    max-width: 8em;
-    height: auto;
-    width: auto;
-}
-
-main>article>a {
-    text-decoration: none;
-    color: white;
-    margin: 1em
-}
-
-article>a {
-    text-decoration: none;
-    color: #606060;
-    margin: 1em;
-}
-
-article>a:hover {
-    color: #ee3968;
-}
-
-section+footer,
-h4,
-a {
-    text-decoration: none;
-    color: black;
-    text-align: center;
-    color: #362f90;
-}
-
-nav>footer>h4 {
-    text-decoration: none;
-    text-align: left;
-    color: black;
-    color: #362f90;
-}
-
-main+footer>a {
-    background-color: #362f90;
-    border-color: #362f90;
-    color: white;
-    border-radius: 1.2em;
-    border-width: 0.1em;
-    border-style: solid;
-    padding: .4em;
-    text-align: left;
-}
-
-a:hover {
-    color: #ee3968;
-}
-
-figure>img {
-    width: 3em;
-    height: 3em;
-    text-align: right;
-    margin-left: -2.5em;
-    margin-top: 13.5em;
-}
-
-main+nav {
-    background-color: #eddbca;
-    padding: 1em;
-}
-
-@media (min-width:30em) {
-    body {
-        background-color: green;
+        article {
+            color: #606060;
+        }
     }
-    li>a>p {
-        font-size: 1em;
+    article>p {
+        margin-left: 3em;
     }
-    main+nav {}
-    section:nth-child(6) {
+    section+main {
         display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: row;
-        flex-wrap: wrap;
-        flex-flow: row wrap;
-        align-content: flex-end;
+        overflow-x: scroll;
     }
-}
-
-@media (min-width:50em) {
-    body {
-        background-color: gold;
-    }
-    section:nth-child(6) {
+    nav+section {
+        background-color: #eddbca;
         display: flex;
-        align-items: center;
+        flex-direction: column;
+    }
+    p {
+        margin: 1em;
+    }
+    section+main>article {
+        height: 17em;
         justify-content: center;
-        flex-direction: row;
-        flex-wrap: wrap;
-        flex-flow: row wrap;
-        align-content: flex-end;
+        border-color: #362f90;
+        border-radius: 1.2em;
+        border-width: 0.1em;
+        border-style: solid;
+        background-color: #362f90;
+        color: white;
+        margin: 1em;
     }
-    li>a>p {
-        font-size: 1em;
+    section>article>header>h2 {
+        width: 100%;
     }
-}
+    section> article {
+        border-radius: 1em;
+        color: #606060;
+        background-color: #fbf7f4;
+        justify-content: center;
+        height: 17em;
+        margin: 1em;
+    }
+    article>header>h2 {
+        font-family: Nexabold;
+        color: white;
+        margin: 1em;
+        text-align: center;
+        width: 10em;
+    }
+    section > article > h2 {
+        color: #362f90;
+    }
+    header>a>img {
+        max-width: 8em;
+        height: auto;
+        width: auto;
+    }
+    main>article>a {
+        text-decoration: none;
+        color: white;
+        margin: 1em
+    }
+    article>a {
+        text-decoration: none;
+        color: #606060;
+        margin: 1em;
+    }
+    article>a:hover {
+        color: #ee3968;
+    }
+    section+footer,
+    h4,
+    a {
+        text-decoration: none;
+        color: black;
+        text-align: center;
+        color: #362f90;
+    }
+    nav>footer>h4 {
+        text-decoration: none;
+        text-align: left;
+        color: black;
+        color: #362f90;
+    }
+    main+footer>a {
+        background-color: #362f90;
+        border-color: #362f90;
+        color: white;
+        border-radius: 1.2em;
+        border-width: 0.1em;
+        border-style: solid;
+        padding: .4em;
+        text-align: left;
+    }
+    a:hover {
+        color: #ee3968;
+    }
+    figure>img {
+        width: 3em;
+        height: 3em;
+        float: right;
+        margin-top: -3em;
+        margin-right: -1em;
+    }
+    main+nav {
+        background-color: #eddbca;
+        padding: 1em;
+        height: 10em;
+    }
+    @media (min-width:40em) {
+        section> article {
+            width: 45%;
+        }
+
+        header ul {
+            margin-left: 16em;
+        }
+
+        body {
+            margin: 0 auto;
+        }
+
+        main {
+            display: flex;
+            flex-direction: row;
+        }
+
+        main>article {
+            width: 45%;
+        }
+
+        main>article:nth-child(3) {
+            display: none;
+        }
+
+        nav+section {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        div+section {
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+
+        @media (min-width: 75em) {
+            header ul {
+                margin-left: 50em;
+            }
+            section>article {
+                margin: 1em;
+            }
+            section+main>article {
+                margin: 1em;
+            }
+            main>article:nth-child(3) {
+                display: block;
+            }
+            main>article {
+                width: 30%;
+            }
+            nav+section>article {
+                width: 30%;
+            }
+            nav+section {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+        }
