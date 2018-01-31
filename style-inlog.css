@@ -1,0 +1,192 @@
+                        body {
+                        font-family: Nexalight;
+                        margin: 0;
+                        padding: 0;
+                        background-image: url('books-inlog.jpg');
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: 250%;
+                    }
+
+                    body>header {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 100%;
+                        height: 4em;
+                        background-color: white;
+                        position: fixed;
+                        top: 0;
+                        left: 0;
+                        z-index: 200;
+                    }
+
+                    li>a>img {
+                        width: 2.6em;
+                    }
+
+                    li>a>p {
+                        font-size: 0;
+                    }
+
+                    header ul {
+                        display: flex;
+                        position: absolute;
+                        right: 0;
+                        margin-top: -1.5em;
+                        margin-right: 1em;
+                    }
+
+                    li {
+                        margin: 0.3em;
+                        list-style: none;
+                    }
+
+                    Fieldset>a {
+                        margin-left: 2em;
+                        font-size: 0.9em;
+                    }
+
+                    header+section {
+                        padding: 1em;
+                        height: 33em;
+                    }
+
+                    form {
+                        background-color: white;
+                        border-radius: 1em;
+                        height: 17em;
+                        width: 80%;
+                        margin-top: 4em;
+                        padding: 1.4em;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+
+                    form:invalid button {
+                        opacity: 0.6;
+                    }
+
+                    form:valid {
+                        color: #4ab967;
+                    }
+
+                    fieldset {
+                        border: none;
+                    }
+
+                    button {
+                        height: 2em;
+                        border-radius: 3em;
+                        background-color: #ff3268;
+                        font-family: Nexabold;
+                        color: white;
+                        font-size: 1em;
+                        box-shadow: inset 0 -0.1875em 0.0625em #ca2b55;
+                        display: block;
+                        margin-left: 2em;
+                        margin-bottom: 1em;
+                    }
+
+                    button:hover {
+                        background-color: #ee678d;
+                    }
+
+                    button:active {
+                        transform: scale(.8, .8);
+                    }
+
+                    button:focus {
+                        box-shadow: none;
+                    }
+
+                    fieldset>a:linked {
+                        color: #362f90;
+                    }
+
+                    fieldset>a:visited {
+                        color: #4ab967;
+                    }
+
+                    fieldset>a:hover {
+                        color: #ff3268;
+                    }
+
+                    fieldset>a:active {
+                        transform: scale(.8, .8);
+                    }
+
+                    input:focus {
+                        background-color: cornsilk;
+                    }
+
+                    input:invalid {
+                        border-color: #ff3268;
+                        border-style: groove;
+                    }
+
+                    input:valid {
+                        border-color: #4ab967;
+                    }
+
+                    legend {
+                        font-family: Nexabold;
+                        color: #362f90;
+                        font-size: 1.7em;
+                        margin-left: 1em;
+                        margin-bottom: 0.6em;
+                    }
+
+                    input {
+                        margin-bottom: 2em;
+                        margin-left: 2em;
+                        border-radius: 1em;
+                        height: 2em;
+                        display: block;
+                        width: 80%;
+                        margin-top: 1em;
+                        font-family: nexalight;
+                    }
+
+                    label {
+                        display: block;
+                        margin-left: 2em;
+                    }
+
+                    header>a>img {
+                        max-width: 11em;
+                        height: auto;
+                        width: auto;
+                        margin: 0 auto;
+                        display: block;
+                        margin-left: 1em;
+                        position: absolute;
+                        left: 0;
+                        margin-top: -1em;
+                    }
+
+                    @media (min-width: 40em) {
+                        form {
+                            border-radius: 1em;
+                            height: 19em;
+                            width: 22em;
+                            margin-left: auto;
+                            margin-right: auto;
+                            margin-top: 10em;
+                        }
+                        button {
+                            height: 2em;
+                            border-radius: 3em;
+                            background-color: #ff3268;
+                            font-family: Nexabold;
+                            color: white;
+                            font-size: 1em;
+                            box-shadow: inset 0 -0.1875em 0.0625em #ca2b55;
+                            display: block;
+                            margin-left: 2em;
+                        }
+                        fieldset {
+                            border: none;
+                            margin-top: 1em;
+                        }
+                        @media (min-width: 75em) {}
