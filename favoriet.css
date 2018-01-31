@@ -3,6 +3,7 @@ body {
     width: 100%;
     margin: 0;
     padding: 0;
+    background-color: #eddbca;
 }
 
 body>header {
@@ -45,6 +46,18 @@ button {
     margin-top: 1em;
     margin-right: auto;
     margin-left: auto;
+}
+
+.imgg {
+    opacity: 0;
+}
+
+.download {
+    width: 3.5em;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    opacity: 1;
 }
 
 p {
@@ -98,8 +111,9 @@ h1 {
     margin-top: -0.6em;
 }
 
-main>a>article {
+main>a >article {
     color: #606060;
+    height: 16em;
 }
 
 main>article>footer>a {
@@ -107,83 +121,55 @@ main>article>footer>a {
     margin-left: 1em;
 }
 
-
-}
 article>p {
     margin-left: 3em;
 }
+
 main {
-    background-color: #eddbca;
     display: flex;
     flex-direction: column;
     margin-top: 4em;
 }
+
 p {
     margin: 1em;
     width: 70%;
     font-size: 0.8em;
 }
+
 main>section {
     margin-left: auto;
     margin-right: auto;
 }
-section>p {
+
+section>button>p {
     position: relative;
     margin-left: auto;
     margin-right: auto;
 }
+
 label {
     position: relative;
     width: 4em;
     height: 2em;
     margin-left: 2em;
 }
+
 label input {
     display: none;
 }
+
 label {
     position: relative;
     display: inline-block;
     width: 3.8em;
     height: 2.1em;
 }
+
 label input {
     display: none;
 }
-span {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ccc;
-}
-span:before {
-    position: absolute;
-    content: "";
-    height: 1.6em;
-    width: 1.6em;
-    left: 0.3em;
-    bottom: 4px;
-    background-color: white;
-    -webkit-transition: .4s;
-    transition: .4s;
-}
-input:checked + span {
-    background-color: #4ab967;
-}
-input:checked + span:before {
-    -webkit-transform: translateX(1.6em);
-    -ms-transform: translateX(1.6em);
-    transform: translateX(1.6em);
-}
-span {
-    border-radius: 1em;
-}
-span:before {
-    border-radius: 50%;
-}
+
 main>a> article {
     border-radius: 1em;
     color: #606060;
@@ -196,34 +182,43 @@ main>a> article {
     margin-bottom: 1em;
     margin-top: 1em;
 }
-article>header>h2 {
+
+article> header> h2 {
     font-family: Nexabold;
     color: white;
     margin: 1em;
     text-align: center;
     width: 10em;
 }
-main>h2 {
+
+main> h2 {
     color: #362f90;
     font-family: Nexabold;
     margin-bottom: 1em;
     text-align: center;
 }
+
 h2+p {
     position: absolute;
     top: 9.5em;
     margin-left: 30%;
 }
-article>header {
-    background-image: url('gevangen.jpg');
-    background-repeat: no-repeat;
-    background-position: center top;
-    border-radius: 1em 1em 0em 0em;
+
+main>a>article>header {
     width: 100%;
     height: 4em;
     display: flex;
     overflow-x: scroll;
 }
+
+main>a>article:nth-child(1)>header {
+    background-image: url('paranoia.png');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100%;
+    border-radius: 1em 1em 0em 0em;
+}
+
 header>a>img {
     max-width: 11em;
     height: auto;
@@ -232,20 +227,38 @@ header>a>img {
     display: block;
     margin-left: 1em;
 }
+
 a:hover {
     color: #ee3968;
 }
-@media (min-width: 40em) {
-    main> article {
-        width: 35em;
-    }
 
+@media (min-width: 40em) {
+    main> a>article {
+        width: 35em;
+        height: 10em;
+    }
     label {
         margin-left: 3em;
     }
+    .download {
+        width: 3.5em;
+        float: right;
+        margin-right: 3em;
+        margin-top: -4.5em;
+        opacity: 1;
+    }
 }
+
 @media (min-width: 75em) {
-    main> article {
+    main> a>article {
         width: 45em;
+        height: 10em;
+    }
+    .download {
+        width: 3.5em;
+        float: right;
+        margin-right: 5em;
+        margin-top: -3.5em;
+        opacity: 1;
     }
 }
