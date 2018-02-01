@@ -1,49 +1,53 @@
-/*jslint browser:true */
+/*jslint browser: true, devel: true, eqeq: true, plusplus: true, sloppy: true, vars: true, white: true*/
 
-//TOEVOEGEN AAN FAVORIETEN
-
-
-
-//var actie = document.querySelector('button.normaal');
-
-//var button = document.querySelector('footer>button.normaal');
-
-//var like = function () {
-
-//actie.classList.toggle('animation');}
+/*//TOEVOEGEN AAN FAVORIETEN
 
 
-//Verander bij klik
 
-//button.addEventListener('click', like);
+var actie = document.querySelector('button.normaal');
+
+var button = document.querySelector('footer>button.normaal');
+
+var like = function () {
+
+    button.classList.toggle('animation');
+    //}
 
 
-// Elemeten selecteren
+    //Verander bij klik
 
+    button.addEventListener('click', like);
+
+
+    // Elemeten selecteren
+*/
 
 function start() {
     "use strict";
 
-    var element = document.getElementById("favoriet");
+    var element = document.querySelector("button.normaal");
     element.classList.toggle("animation");
 
 }
 
-
-
 //OFFLINE ZETTEN
 
-//function startDownload() {
-//var uno = document.getElementById("offline");
-//uno.classList.toggle("download");};
-
-var section = document.querySelector('img.imgg'); // first section element
+var section = document.querySelector('img.gelukt');
 var button = document.getElementById('offline');
 
 function download() {
     "use strict";
-    /* 3. toggle een class op een element, dit triggert een CSS Transition (zie CSS: section.dance) */
+
     section.classList.toggle('download');
 }
 
-/* 2. voeg een event toe aan een element */
+//BEOORDELEN
+
+var section = document.querySelector('section+section>p');
+var button = document.querySelector('active fa fa-star');
+
+function beoordeling() {
+    "use strict";
+
+    section.classList.toggle('beoordeeld');
+}

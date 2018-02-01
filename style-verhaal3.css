@@ -1,0 +1,263 @@
+body {
+    font-family: Nexalight;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #eddbca;
+}
+
+body>header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 4em;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 200;
+    background-size: 100%;
+}
+
+textarea {
+    border-radius: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    max-height: 10em;
+    text-align: center;
+    margin-top: 4em;
+}
+
+p {
+    margin: 1em;
+}
+
+section+section>p {
+    text-align: center;
+    font-family: nexabold;
+    font-size: 1.5em;
+    margin-top: -0.5em;
+    opacity: 0;
+}
+
+@keyframes myAnimation {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        display: none;
+        opacity: 0;
+    }
+}
+
+.beoordeeld {
+    text-align: center;
+    font-family: nexabold;
+    font-size: 1.5em;
+    margin-top: -0.5em;
+    opacity: 1;
+    animation-name: myAnimation;
+    animation-duration: 2.5s;
+    animation-fill-mode: forwards;
+}
+
+button {
+    height: 2em;
+    border-radius: 3em;
+    background-color: #ff3268;
+    font-family: Nexabold;
+    color: white;
+    font-size: 1em;
+    box-shadow: inset 0 -0.1875em 0.0625em #ca2b55;
+    display: block;
+    margin-top: 1em;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+header+section>p {
+    text-align: center;
+    color: white;
+    margin-top: -1.5em;
+    text-shadow: 0.2em 0.2em 0.5em #000000;
+}
+
+footer>h2 {
+    color: #362f90;
+    font-family: Nexabold;
+    margin-bottom: 1em;
+    text-align: center;
+    margin-top: 4em;
+}
+
+li>a>img {
+    width: 2.6em;
+}
+
+li>a>p {
+    font-size: 0;
+}
+
+header ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav {
+    float: none;
+    display: block;
+    width: 100%;
+    margin-right: 1em;
+}
+
+li {
+    margin: 0.3em;
+    list-style: none;
+}
+
+li a {
+    color: #4ab967;
+    margin-bottom: 1em;
+    text-decoration: none;
+}
+
+footer {
+    margin-top: -5em;
+    padding: 1em;
+    height: 30em;
+}
+
+header+section {
+    background-repeat: no-repeat;
+    padding: 6em;
+    height: 200em;
+    background-image: url(telefoon2.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-top: 4em;
+}
+
+fieldset {
+    width: 50%;
+    background-color: white;
+    border-radius: 1em;
+    height: 20em;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.4em;
+    border-color: transparent;
+}
+
+h1 {
+    font-family: Nexabold;
+    color: white;
+    font-size: 1.7em;
+    text-align: center;
+    text-shadow: 0.2em 0.2em 0.5em #000000;
+    margin-top: -0.6em;
+}
+
+main>article {
+    color: #606060;
+}
+
+main>article>footer>a {
+    color: #606060;
+    margin-left: 1em;
+}
+
+
+}
+article>p {
+    margin-left: 3em;
+}
+main {
+    background-color: #eddbca;
+    display: flex;
+    flex-direction: column;
+}
+main>section {
+    margin-left: 70%;
+}
+main> article {
+    border-radius: 1em;
+    color: #606060;
+    background-color: #fbf7f4;
+    justify-content: center;
+    height: 17em;
+    margin: 1em;
+}
+article>header>h2 {
+    font-family: Nexabold;
+    color: white;
+    margin: 1em;
+    text-align: center;
+    width: 10em;
+}
+header>a>img {
+    max-width: 11em;
+    height: auto;
+    width: auto;
+    margin: 0 auto;
+    display: block;
+    margin-left: 1em;
+}
+.star-rating {
+    direction: rtl;
+    text-align: center;
+}
+.star-rating input[type=radio] {
+    display: none
+}
+.star-rating label {
+    color: #bbb;
+    font-size: 2em;
+    padding: 0;
+    cursor: pointer;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    margin-left: -1em;
+    margin-right: -1em;
+}
+.star-rating label:hover,
+.star-rating label:hover ~ label,
+.star-rating input[type=radio]:checked ~ label {
+    color: #f2b600;
+}
+article>a {
+    text-decoration: none;
+    color: #606060;
+    margin: 1em;
+}
+article>a:hover {
+    color: #ee3968;
+}
+article>footer>a {
+    color: white;
+    margin-left: 1em;
+}
+a:hover {
+    color: #ee3968;
+}
+@media (min-width: 40em) {
+    header+section {
+        background-image: url("tabletvoetbal.png");
+        background-size: 100%;
+        margin-top: -0em;
+        background-size: 110%;
+        margin-top: -0em;
+        margin-left: -1em;
+        height: 350em;
+    }
+}
+@media (min-width: 75em) {
+    header+section {
+        background-image: url("tabletvoetbal.png");
+        height: 400em;
+    }
+}
