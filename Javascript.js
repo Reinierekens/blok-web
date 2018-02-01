@@ -32,7 +32,7 @@ function start() {
 
 //OFFLINE ZETTEN
 
-var section = document.querySelector('img.gelukt');
+var section = document.querySelector('img.ontzichtbaar');
 var button = document.getElementById('offline');
 
 function download() {
